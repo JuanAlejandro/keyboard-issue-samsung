@@ -1,0 +1,4 @@
+#Thu Feb 17 19:34:14 EET 2022
+base.0=/Users/solovei/Documents/versions-test/projecttwo/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
