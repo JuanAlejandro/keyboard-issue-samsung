@@ -17,7 +17,7 @@ const CommentsInput = ({}) => {
       <View
         style={[
           styles.TextInputWrapper,
-          {height: Platform.OS === 'ios' ? inputHeight : inputHeight - 10},
+          {height: '100%'},
         ]}>
         <TextInput
           allowFontScaling={false}
@@ -28,11 +28,11 @@ const CommentsInput = ({}) => {
           }
           placeholder={'placeholder'}
           placeholderTextColor={'#555'}
+          multiline
           style={[
             styles.textInputStyles,
             {
-              height:
-                Platform.OS === 'ios' ? inputHeight - 6 : inputHeight - 10,
+              height: 350
             },
           ]}
           ref={inputRef}

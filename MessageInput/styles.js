@@ -16,7 +16,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-end',
     justifyContent: 'space-between',
-    height: 48,
   },
   avatarStyle: {
     width: 24,
