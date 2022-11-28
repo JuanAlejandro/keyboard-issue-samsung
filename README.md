@@ -1,2 +1,3 @@
-# projectTwo
-Repository containing bare react native project with simple text input
+# TextInput Playground
+
+Repository containing bare react native project with two TextInputs

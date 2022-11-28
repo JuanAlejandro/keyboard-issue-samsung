@@ -24,24 +24,9 @@ project.xcworkspace
 
 # Gradle
 /build/
-/packages/react-native-gradle-plugin/build/
-/packages/rn-tester/build
-/packages/rn-tester/android/app/.cxx/
-/packages/rn-tester/android/app/build/
-/packages/rn-tester/android/app/gradle/
-/packages/rn-tester/android/app/gradlew
-/packages/rn-tester/android/app/gradlew.bat
-/ReactAndroid/build/
-/ReactAndroid/.cxx/
-/ReactAndroid/gradle/
-/ReactAndroid/gradlew
-/ReactAndroid/gradlew.bat
-/ReactAndroid/external-artifacts/build/
-/ReactAndroid/external-artifacts/artifacts/
-/ReactAndroid/hermes-engine/build/
-/ReactAndroid/hermes-engine/.cxx/
-/template/android/app/build/
-/template/android/build/
+/android/app/build/
+/android/build/
+/android/.gradle/
 
 # Buck
 .buckd
@@ -82,6 +67,9 @@ package-lock.json
 /coverage
 /third-party
 
+# Test Reports
+/reports
+
 # Root dir shouldn't have Xcode project
 /*.xcodeproj
 
@@ -110,7 +98,7 @@ package-lock.json
 !/packages/rn-tester/Pods/__offline_mirrors_hermes__
 !/packages/rn-tester/Pods/__offline_mirrors_jsc__
 
-# react-native-codegen
+# @react-native/codegen
 /React/FBReactNativeSpec/FBReactNativeSpec
 /packages/react-native-codegen/lib
 /packages/react-native-codegen/tmp/
@@ -132,4 +120,3 @@ package-lock.json
 
 # Temporary files created by Metro to check the health of the file watcher
 .metro-health-check*
-keystore
