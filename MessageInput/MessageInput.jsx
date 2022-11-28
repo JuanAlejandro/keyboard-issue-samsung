@@ -4,17 +4,22 @@ import {
 } from 'react-native';
 
 function CommentsInput() {
-  const [valueState, setValueState] = useState('valueState');
+  const [valueState, setValueState] = useState('');
   const [showValueState, setShowValueState] = useState(false);
 
-  const valueRef = useRef('valueRef');
+  const valueRef = useRef('');
   const [showValueRef, setShowValueRef] = useState(false);
 
   return (
     <ScrollView style={{ backgroundColor: '#fff', height: '100%', padding: 16 }}>
       <View>
         <Text>TextInput using useState</Text>
-        <TextInput placeholder="type something long enough to crash the app" multiline onChangeText={(txt) => setValueState(txt)} />
+        <TextInput
+          placeholder="type something long enough to crash the app"
+          multiline
+          value={valueState}
+          onChangeText={(txt) => setValueState(txt)}
+        />
         <Button title="Submit" onPress={() => setShowValueState(true)} />
         {showValueState && <Text>{`Your input: ${valueState}`}</Text>}
       </View>
@@ -24,7 +29,11 @@ function CommentsInput() {
       />
       <View>
         <Text>TextInput using useRef</Text>
-        <TextInput placeholder="type something long enough to crash the app" multiline onChangeText={(txt) => { valueRef.current = txt; }} />
+        <TextInput
+          placeholder="type something long enough to crash the app"
+          multiline
+          onChangeText={(txt) => { valueRef.current = txt; }}
+        />
         <Button title="Submit" onPress={() => setShowValueRef(true)} />
         {showValueRef && <Text>{`Your input: ${valueRef.current}`}</Text>}
       </View>
